@@ -1,0 +1,378 @@
+@charset "UTF-8";
+/* fuente */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+/* textos */
+.textoGrande {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bolder;
+  color: #da5100;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.textoGigante {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bolder;
+  color: #da5100;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.textoMediano {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.textoPequenio {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.textoIzquierda {
+  text-align: left;
+}
+
+.textoConPadding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* header */
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: solid 3px;
+  background-color: #dee7ea;
+  color: black;
+}
+
+header nav ul {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+main {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* contacto */
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.cajasFormulario {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 2px solid #fb883c;
+}
+
+.boton {
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fb883c;
+  border: solid 2px #fb883c;
+  width: 100px;
+  margin: auto;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dee7ea;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #37859d;
+  border-top: solid 3px #37859d;
+}
+
+footer img {
+  padding: 10px;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline;
+}
+
+
+
+/* links */
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  cursor: pointer;
+}
+
+/* estilo index */
+.fotoMainUno {
+  width: 100%;
+  height: auto;
+}
+
+.fotoMainDos {
+  width: 100%;
+  height: auto;
+}
+
+.fotoMainTres {
+  grid-area: fototres;
+  width: 100%;
+  height: auto;
+}
+
+.fotoMainCuatro {
+  grid-area: fotocuatro;
+  width: 100%;
+  height: auto;
+}
+
+.fotoMainCinco {
+  grid-area: fotocinco;
+  width: 100%;
+  height: auto;
+}
+
+.fotoMainSeis {
+  width: 80vw;
+  height: auto;
+}
+
+.mainContenedorDos {
+  column-gap: 30px;
+  display: grid;
+  grid-template-columns: 65fr 35fr;
+  grid-template-areas:
+    "fototres fotocinco"
+    "fotocuatro fotocinco";
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.mainContenedorTres {
+  display: flex;
+  justify-content: center;
+}
+
+.mainContenedorUno {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+
+/* estilo adopciones y transitos */
+.contenedorFotoUno {
+  grid-area: fotouno;
+  width: 100%;
+  height: auto;
+}
+
+.contenedorFotoDos {
+  grid-area: fotodos;
+  width: 100%;
+  height: auto;
+}
+
+.contenedorFotoTres {
+  grid-area: fototres;
+  width: 100%;
+  height: auto;
+}
+
+.contenedorFotoCuatro {
+  grid-area: fotocuatro;
+  width: 100%;
+  height: auto;
+}
+
+.contenedorFotoCinco {
+  grid-area: fotocinco;
+  width: 100%;
+  height: auto;
+}
+
+.contenedorCincoFotos {
+  column-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "fotouno fotodos fototres fotocuatro fotocinco";
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+/* fotos y texto*/
+/* texto izquierda y fotos derecha */
+.seccionIzquierda {
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "texto fotouno";
+}
+
+.seccionDerecha {
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "fotouno texto";
+}
+
+.imagenCostado {
+  grid-area: fotouno;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.requisitos {
+  grid-area: texto;
+  padding: 10px;
+}
+
+.requisitos ul li {
+  list-style-type: none;
+}
+
+.requisitos ul li::before {
+  content: "❤";
+  color: #fb883c;
+  font-size: 1rem;
+  margin-right: 3px;
+}
+
+/* estilo HISTORIAS */
+.banner {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(251, 136, 60);
+  border-radius: 50%;
+  transition: none;
+  opacity: 1;
+  top: 30px;
+}
+
+/* media queries */
+@media (min-width: 900px) and (max-width: 1199px) {
+  header nav ul {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 900px) {
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .textoGigante {
+    font-size: 2rem;
+  }
+
+  .textoGrande {
+    font-size: 1.5rem;
+  }
+
+  .textoMediano,
+  .textoPequenio {
+    font-size: 1rem;
+  }
+
+  .mainContenedorUno {
+    flex-direction: column;
+  }
+
+  .mainContenedorDos {
+    grid-template-columns: 1fr grid-template-areas: "fototres"
+      "fotocinco"
+      "fotocuatro";
+    padding: 0;
+  }
+
+  .mainContenedorTres {
+    padding: 0%;
+  }
+
+  .contenedorCincoFotos {
+      grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "fotouno fotodos fototres";
+    column-gap: 0;
+      padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+
+  }
+
+  .contenedorFotoCuatro,
+  .contenedorFotoCinco {
+    display: none;
+  }
+
+  .seccionDerecha,
+  .seccionIzquierda {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .textoConPadding {
+    padding: 0%;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .cajasFormulario {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
