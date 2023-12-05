@@ -1,0 +1,25 @@
+/* header */
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: solid 3px ;
+    background-color: #dee7eaff;
+    color: black;
+}
+
+header nav ul {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 10px;
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 20px;
+    }
+}

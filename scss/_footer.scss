@@ -1,0 +1,22 @@
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dee7eaff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: $color-celeste;
+    border-top: solid 3px $color-celeste;
+  
+    img {
+      padding: 10px;
+    }
+  
+    ul li {
+      list-style: none;
+      display: inline;
+    }
+  }

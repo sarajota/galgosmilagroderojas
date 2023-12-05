@@ -1,0 +1,69 @@
+/* media queries */
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  header nav ul {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .textoGigante {
+    font-size: 2rem;
+  }
+
+  .textoGrande {
+    font-size: 1.5rem;
+  }
+
+  .textoMediano,
+  .textoPequenio {
+    font-size: 1rem;
+  }
+
+  .mainContenedorUno,
+  .mainContenedorDos {
+    column-gap: 10px;
+    padding: 0%;
+  }
+
+  .mainContenedorTres {
+    padding: 0%;
+  }
+
+  .contenedorCincoFotos {
+    column-gap: 5px;
+    padding: 0%;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "fotouno fotodos fototres";
+  }
+
+  .contenedorFotoCuatro,
+  .contenedorFotoCinco {
+    display: none;
+  }
+
+  .seccionDerecha,
+  .seccionIzquierda {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .textoConPadding {
+    padding: 0%;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .cajasFormulario {
+    width: 100%;
+  }
+}

@@ -1,0 +1,60 @@
+/* estilo index */
+
+.fotoMainUno {
+    grid-area: fotouno;
+    width: 100%;
+    height: auto;
+}
+
+.fotoMainDos {
+    grid-area: fotodos;
+    width: 100%;
+    height: auto;
+}
+
+.fotoMainTres {
+    grid-area: fototres;
+    width: 100%;
+    height: auto;
+}
+
+.fotoMainCuatro {
+    grid-area: fotocuatro;
+    width: 100%;
+    height: auto;
+}
+
+.fotoMainCinco {
+    grid-area: fotocinco;
+    width: 100%;
+    height: auto;
+}
+
+.fotoMainSeis {
+    width: 100%;
+    height: auto;
+}
+
+.mainContenedorTres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContenedorUno {
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: 25fr 75fr;
+    grid-template-areas: "fotouno fotodos";
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.mainContenedorDos {
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: 65fr 35fr;
+    grid-template-areas: "fototres fotocinco" "fotocuatro fotocinco";
+    padding-left: 200px;
+    padding-right: 200px;
+}

@@ -1,0 +1,100 @@
+/* estilo adopciones y transitos */
+
+@mixin fotos {
+    width: 100%;
+    height: auto;
+}
+
+.contenedorFotoUno {
+    grid-area: fotouno;
+    @include fotos;
+}
+
+.contenedorFotoDos {
+    grid-area: fotodos;
+    @include fotos;
+}
+
+.contenedorFotoTres {
+    grid-area: fototres;
+    @include fotos;
+}
+
+.contenedorFotoCuatro {
+    grid-area: fotocuatro;
+    @include fotos;
+}
+
+.contenedorFotoCinco {
+    grid-area: fotocinco;
+    @include fotos;
+}
+
+.contenedorCincoFotos {
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "fotouno fotodos fototres fotocuatro fotocinco";
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+/* fotos y texto*/
+
+/* texto izquierda y fotos derecha */
+
+.seccionIzquierda {
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "texto fotouno";
+}
+
+.seccionDerecha {
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "fotouno texto";
+}
+
+.imagenCostado {
+    grid-area: fotouno;
+    @include fotos;
+    padding: 20px;
+}
+
+.requisitos {
+    grid-area: texto;
+    padding: 10px;
+
+    ul li {
+        list-style-type: none;
+
+        &::before {
+            content: "❤";
+            color: $color-naranjaclaro;
+            font-size: 1rem;
+            margin-right: 3px;
+        }
+    }
+}
+
+/* estilo HISTORIAS */
+
+.banner {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(251, 136, 60, 1);
+    border-radius: 50%;
+    transition: none;
+    opacity: 1.0;
+    top: 30px;
+}

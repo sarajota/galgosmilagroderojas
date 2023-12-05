@@ -1,0 +1,35 @@
+/* contacto */
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .cajasFormulario {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: 2px solid $color-naranjaclaro;
+  }
+  
+  .boton {
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: $color-naranjaclaro;
+    border: solid 2px $color-naranjaclaro;
+    width: 100px;
+    margin: auto;
+  }
+  

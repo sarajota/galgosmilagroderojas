@@ -1,0 +1,48 @@
+/* fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* textos */
+
+.textoGrande {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bolder;
+  color: $color-naranjaoscuro;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.textoGigante {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bolder;
+  color: $color-naranjaoscuro;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.textoMediano {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.textoPequenio {
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.textoIzquierda {
+  text-align: left;
+}
+
+.textoConPadding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
